@@ -36,7 +36,7 @@ for x in stride(from: 0, through: 500, by: 90) {
     }
     
 }
-        
+canvas.copyToClipboard()
         
 /*:
  ## Add your code below

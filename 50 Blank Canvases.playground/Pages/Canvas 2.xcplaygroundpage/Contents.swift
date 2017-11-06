@@ -24,6 +24,17 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
+for i in stride(from: 0, to: 100, by: 20) {
+    
+    // draw in red with increasing brightness
+    canvas.fillColor = Color(hue: 0, saturation: 80, brightness: i, alpha: 100)
+    
+    // draw my circle
+    canvas.drawEllipse(centreX: 200, centreY: i + 100, width: 200, height: 150)
+    
+    
+}
+
 
 
 /*:
