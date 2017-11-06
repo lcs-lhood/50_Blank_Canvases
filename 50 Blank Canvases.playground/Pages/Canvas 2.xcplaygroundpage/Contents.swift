@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 600, height: 600)
 
 /*:
  ## Add your code below
@@ -30,9 +30,37 @@ for i in stride(from: 0, to: 100, by: 20) {
     canvas.fillColor = Color(hue: 0, saturation: 80, brightness: i, alpha: 100)
     
     // draw my circle
-    canvas.drawEllipse(centreX: 200, centreY: i + 100, width: 200, height: 150)
+    canvas.drawEllipse(centreX: 200, centreY: i + 75, width: 200, height: 140)
+
+    // draw in red with increasing brightness
+    canvas.fillColor = Color(hue: 240, saturation: 80, brightness: i, alpha: 100)
     
+    // draw my circle
+    canvas.drawEllipse(centreX: 400, centreY: i + 75, width: 200, height: 140)
+
+    // draw in red with increasing brightness
+    canvas.fillColor = Color(hue: 120, saturation: 80, brightness: i, alpha: 100)
     
+    // draw my circle
+    canvas.drawEllipse(centreX: 200, centreY: i + 250, width: 200, height: 140)
+   
+    // draw in red with increasing brightness
+    canvas.fillColor = Color(hue: 300, saturation: 80, brightness: i, alpha: 100)
+    
+    // draw my circle
+    canvas.drawEllipse(centreX: 400, centreY: i + 250, width: 200, height: 140)
+    
+    // draw in red with increasing brightness
+    canvas.fillColor = Color(hue: 190, saturation: 80, brightness: i, alpha: 100)
+    
+    // draw my circle
+    canvas.drawEllipse(centreX: 200, centreY: i + 450, width: 200, height: 140)
+    
+    // draw in red with increasing brightness
+    canvas.fillColor = Color(hue: 360, saturation: 80, brightness: i, alpha: 100)
+    
+    // draw my circle
+    canvas.drawEllipse(centreX: 400, centreY: i + 450, width: 200, height: 140)
 }
 
 
